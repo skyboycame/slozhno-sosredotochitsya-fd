@@ -16,7 +16,7 @@
   --title-font-size-pc: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --main-font-size: 18px;
   --container-padding-mb: 10px;
-  --container-padding-pc: 20px 10px 20px 20px;
+  --container-padding-pc: 20px;
 
 
 }
