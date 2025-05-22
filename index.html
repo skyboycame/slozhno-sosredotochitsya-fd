@@ -9,7 +9,7 @@
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="./images/mobile-icon.png" type="image/png" />
-    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -55,8 +55,10 @@
     </header>
     <main class="content">
       <section class="cards">
-        <ul class="lots__card-list">
-          <h3 class="lots__title">Почему сосредоточиться так сложно</h3>
+        <ul class="lots__card-list lots__card-list-first-section">
+          <li class="lots__card-list-item">
+            <h3 class="lots__title">Почему сосредоточиться так сложно</h3>
+          </li>
           <li class="lots__card-list-item">
             <article class="card">
               <h4 class="card__title title-decor">Многозадачность</h4>
@@ -74,7 +76,7 @@
             </article>
           </li>
           <li class="lots__card-list-item">
-            <article class="card">
+            <article class="card card__spec">
               <h4 class="card__title title-decor">Дофамин</h4>
               <p class="card__desc">
                 С гормонами стресса всё понятно, но дальше — ещё интереснее. В
@@ -91,10 +93,10 @@
           </li>
         </ul>
 
-        <ul class="lots__card-list">
-          <h3 class="lots__title">
-            Что снижает концентрацию внимания?
-          </h3>
+        <ul class="lots__card-list lots__card-list-second-section">
+          <li class="lots__card-list-item">
+            <h3 class="lots__title">Что снижает концентрацию внимания?</h3>
+          </li>
           <li class="lots__card-list-item">
             <article class="card">
               <h4 class="card__title title-decor">Многозадачность</h4>
@@ -138,16 +140,18 @@
           </li>
         </ul>
 
-        <ul
-          class="lots__card-list"
-        >
-          <h3 class="lots__title">
-            Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
-            секунд)
-          </h3>
-          <p class="lots__slogan title-decor">
-            5 простых (на самом деле не очень) советов
-          </p>
+        <ul class="lots__card-list lots__card-list-third-section">
+          <li class="lots__card-list-item">
+            <h3 class="lots__title">
+              Как концентрироваться лучше, чем золотая рыбка (то есть дольше
+              трёх секунд)
+            </h3>
+          </li>
+          <li class="lots__card-list-item">
+            <p class="lots__slogan title-decor">
+              5 простых (на самом деле не очень) советов
+            </p>
+          </li>
           <li class="lots__card-list-item">
             <article class="card">
               <h4 class="card__slogan-subtitle title-decor">
@@ -228,7 +232,6 @@
           class="gallery__img"
           src="./images/ice-cream.png"
           alt="мороженка"
-          loading="lazy"
           loading="lazy"
         />
         <img
