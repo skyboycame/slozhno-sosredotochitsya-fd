@@ -21,6 +21,7 @@
     --accent-color: #FF8DCB;
     --text-color: #353430;
     --main-color: #FFC2E6;
+
     
   }
 
@@ -46,6 +47,9 @@
 .theme-auto .footer::before {
   border-inline-end: 1px solid var(--text-color);
   border-block-start: 1px solid var(--text-color);
+}
+.theme-auto .lots__title {
+  color: var(--text-color);
 }
 
 
