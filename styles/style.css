@@ -45,8 +45,7 @@
   grid-column: 1 / -1;
   grid-row: -2 / -1;
   height: fit-content;
-  margin-block-start: 6vh;
-  margin-block-end: -10vw;
+  margin-block-start: 2vh;
   font-weight: bold;
   text-align: start;
 }
@@ -143,7 +142,8 @@
   margin-block-start: 5vh;
 }
 
-.lots__card-list-third-section > .lots__card-list-item:nth-of-type(3) > .card {
+.lots__card-list-third-section > .lots__card-list-item:nth-of-type(3) > .card,
+.lots__card-list-second-section > .lots__card-list-item:nth-of-type(4) > .card {
   margin-block: 0;
 }
 
@@ -204,7 +204,7 @@
 .gallery {
   display: grid;
   gap: 10px;
-  padding-block-start: 28px;
+  padding-block-start: 45px;
 }
 
 .gallery__img {
@@ -354,7 +354,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: min-content 0fr 0fr 1fr;
     gap: 20px;
-    padding-block-start: 90px;
+    padding-block-start: 113px;
   }
 
   .gallery__title {
@@ -471,6 +471,10 @@
 
   .lots__card-list-second-section .lots__card-list-item:last-of-type .card {
     margin-block-start: 0;
+  }
+
+  .gallery {
+    padding-block-start: 104px;
   }
 
   .footer {
