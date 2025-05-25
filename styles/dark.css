@@ -35,12 +35,6 @@
 
 
 
-.theme-dark .header__title, 
-.theme-dark .footer__title {
-  --main-color : #DB00FF;
-  color: var(--main-color);
-}
-
 .theme-dark .footer::after {
     --accent-color: #FF0070;
   }
