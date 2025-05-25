@@ -23,19 +23,11 @@
     --main-color: #ffc2e6;
   }
 
-  .footer::after {
+  .decorated-zone::after {
     --accent-color: #353430;
   }
 
-  .footer::before {
-    --accent-color: #353430;
-  }
-
-  .header__theme-menu::after {
-    --accent-color: #353430;
-  }
-
-  .header__theme-menu::before {
+  .decorated-zone::before {
     --accent-color: #353430;
   }
 
@@ -65,19 +57,12 @@
   }
 }
 
-.theme-light .footer::after {
+
+.theme-light .decorated-zone::after {
   --accent-color: #353430;
 }
 
-.theme-light .footer::before {
-  --accent-color: #353430;
-}
-
-.theme-light .header__theme-menu::after {
-  --accent-color: #353430;
-}
-
-.theme-light .header__theme-menu::before {
+.theme-light .decorated-zone::before {
   --accent-color: #353430;
 }
 
