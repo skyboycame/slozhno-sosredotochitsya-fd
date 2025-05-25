@@ -19,16 +19,65 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --bg-image : url(../images/cover-image-dark.png);
+    --accent-color : #FF0070;
+    --accent-color-opacity: (255, 0, 112, 0.5)
     --main-color: #DB00FF;
+    --header-text-color: #000028;
+    --text-color: #F1B2CE;
   }
 }
 
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-}
+  .header__title,
+  .footer__title {
+    --main-color: #DB00FF;
+  }
+
+
 
 .theme-dark .header__title, 
 .theme-dark .footer__title {
   --main-color : #DB00FF;
   color: var(--main-color);
+}
+
+.theme-dark .footer::after {
+    --accent-color: #FF0070;
+  }
+
+.theme-dark .footer::before {
+  --accent-color: #FF0070;
+}
+
+.theme-dark .header__theme-menu::after {
+  --accent-color: #FF0070;
+}
+
+.theme-dark .header__theme-menu::before {
+  --accent-color: #FF0070;
+}
+
+.theme-dark .header__theme-menu-button {
+  --accent-color: #FF0070;
+}
+
+.theme-dark .header__theme-menu-button_active {
+  --accent-color: #FF0070;
+}
+
+.theme-dark .header__theme-menu-button:focus-visible {
+  --accent-color: #FF0070;
+}
+
+.theme-dark .lots__title {
+  --accent-color: #FF0070;
+}
+
+.theme-dark .header__title,
+.theme-dark .footer__title {
+  --main-color: #DB00FF;
+}
+
+.theme-dark .header__decoration {
+  display: inline;
 }

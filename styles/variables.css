@@ -3,20 +3,18 @@
   и их переопределение под различные устройства
 */
 :root {
-  --bg-image : url(../images/cover-image-dark.png);
-  --accent-color : #FF0070;
-  --accent-color-opacity: (255, 0, 112, 0.5)
-  --main-color: #DB00FF;
+  --bg-image: url(../images/cover-image-dark.png);
+  --accent-color: #ff0070;
+  --main-color: #db00ff;
   --header-text-color: #000028;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
   --text-shadow: 4px 4px 0 var(--accent-color);
   --link-shadow: 1px 1px 0 var(--accent-color);
-  --main-font: 'IBM Plex mono';
+  --main-font: "IBM Plex mono";
   --title-font-size-mb: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --title-font-size-pc: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --main-font-size: 18px;
   --container-padding-mb: 10px;
   --container-padding-pc: 20px;
-
-
+  --accent-color-oppacity: rgba(255, 0, 112, 0.4);
 }
