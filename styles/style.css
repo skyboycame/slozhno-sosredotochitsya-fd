@@ -3,6 +3,7 @@
 .page {
   padding: var(--container-padding-mb);
   color: var(--text-color);
+  background-color: var(--page-color);
   font-family: var(--main-font), monospace;
   font-size: var(--main-font-size);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
@@ -10,14 +11,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.theme-light .page {
-  background-color: #fff1f7;
-}
-
-.theme-dark .page {
-  background-color: #000028;
 }
 
 h1,
@@ -38,7 +31,7 @@ p {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr min-content min-content 1fr;
   height: 100vh;
-  min-height: 660px;
+  min-height: 668px;
 }
 
 .title-decor {
@@ -78,9 +71,8 @@ p {
   justify-content: center;
   align-items: end;
   gap: 11.5px;
-  margin-inline-end: -7px;
   margin-block: 6vw;
-  padding: 11.5vw 2vw 12vw 0;
+  padding: 11.5vw 0 12vw 0;
 }
 
 .header__theme-menu-button {
@@ -237,7 +229,7 @@ p {
 .footer {
   position: relative;
   height: 100vh;
-  min-height: 660px;
+  min-height: 668px;
   padding-block-start: 20px;
 }
 
@@ -256,15 +248,11 @@ p {
 .footer.decorated-zone::before {
   top: 45px;
   right: 0;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
 }
 
 .footer.decorated-zone::after {
   bottom: -25px;
   left: 0;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
 }
 
 @media (width >= 768px) {
@@ -283,10 +271,6 @@ p {
     margin-block: 5vw;
   }
 
-  .header__theme-menu-list {
-    padding-inline-end: 8px;
-  }
-
   .header__title {
     grid-column: 1 / -1;
     grid-row: 2;
@@ -298,18 +282,11 @@ p {
   .header__description {
     grid-column: -1 / -2;
     grid-row: -1 / -2;
-    margin-block: 16vw;
-  }
-
-  .header__theme-menu::after {
-    margin-block-end: 40px;
+    margin-block-start: 16vw;
   }
 
   .decorated-zone::after {
     bottom: 42px;
-    left: 0;
-    border-inline-start: 1px solid var(--accent-color);
-    border-block-end: 1px solid var(--accent-color);
   }
 
   .cards-priority {
@@ -424,30 +401,12 @@ p {
     font-size: var(--title-font-size-pc);
   }
 
-  .footer::before {
-    top: 76px;
-    right: 0;
-    border-inline-end: 1px solid var(--accent-color);
-    border-block-start: 1px solid var(--accent-color);
-  }
-  .footer::after {
-    bottom: -36px;
-    left: 0;
-    border-inline-start: 1px solid var(--accent-color);
-    border-block-end: 1px solid var(--accent-color);
-  }
   .footer.decorated-zone::before {
     top: 78px;
-    right: 0;
-    border-inline-end: 1px solid var(--accent-color);
-    border-block-start: 1px solid var(--accent-color);
   }
 
   .footer.decorated-zone::after {
     bottom: -38px;
-    left: 0;
-    border-inline-start: 1px solid var(--accent-color);
-    border-block-end: 1px solid var(--accent-color);
   }
 }
 
@@ -463,17 +422,17 @@ p {
     margin: 0;
   }
 
-  .header__theme-menu-item:nth-of-type(3) {
+  /* .header__theme-menu-item:nth-of-type(3) {
     margin-left: 22px;
-  }
+  } */
 
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 0;
     margin: 0;
-    padding: 0;
+    padding: 0 45px 45px 45px;
   }
 
   .header__description {
@@ -487,7 +446,7 @@ p {
   }
 
 
-  .cards-priority, .cards-advice{
+  .cards-priority, .cards-advice {
     gap: 10px;
   }
 
@@ -522,5 +481,111 @@ p {
   .footer__title {
     padding-block-end: 34vh;
     font-size: var(--title-font-size-pc);
+  }
+}
+
+.theme-dark .decorated-zone::after {
+    --accent-color: #FF0070;
+  }
+
+.theme-dark .decorated-zone::before {
+  --accent-color: #FF0070;
+}
+
+.theme-dark .header__theme-menu-button {
+  --accent-color: #FF0070;
+}
+
+.theme-dark .header__theme-menu-button_active {
+  --accent-color: #FF0070;
+}
+
+.theme-dark .header__theme-menu-button:focus-visible {
+  --accent-color: #FF0070;
+}
+
+/* .theme-dark .header__theme-menu-button:hover {
+  --accent-color-oppacity: (255, 0, 112, 0.4);
+} */
+
+.theme-dark .header__title,
+.theme-dark .footer__title {
+  --main-color: #DB00FF;
+}
+
+.theme-dark .lots__title {
+  --accent-color: #FF0070;
+}
+
+.theme-dark .header__decoration {
+  display: inline;
+}
+
+.theme-light .decorated-zone::after {
+  --accent-color: #353430;
+}
+
+.theme-light .decorated-zone::before {
+  --accent-color: #353430;
+}
+
+.theme-light .header__theme-menu-button {
+  --accent-color: #353430;
+}
+
+.theme-light .header__theme-menu-button_active {
+  --accent-color: #353430;
+}
+
+.theme-light .header__theme-menu-button:focus-visible {
+  --accent-color: #353430;
+}
+
+.theme-light .header__decoration {
+  display: none;
+}
+
+
+.theme-light .lots__title {
+  --accent-color: #353430;
+} 
+
+/* .theme-light .header__title,
+.theme-light .footer__title {
+  --main-color: #ffc2e6;
+} */
+
+@media (prefers-color-scheme: light) {
+  .decorated-zone::after {
+    --accent-color: #353430;
+  }
+
+  .decorated-zone::before {
+    --accent-color: #353430;
+  }
+
+  .header__theme-menu-button {
+    --accent-color: #353430;
+  }
+
+  .header__theme-menu-button_active {
+    --accent-color: #353430;
+  }
+
+  .header__theme-menu-button:focus-visible {
+    --accent-color: #353430;
+  }
+
+  .lots__title {
+    --accent-color: #353430;
+  }
+
+  .header__title,
+  .footer__title {
+    --main-color: #ffc2e6;
+  }
+
+  .header__decoration {
+    display: none;
   }
 }
