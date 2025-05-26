@@ -14,7 +14,7 @@
   --accent-color: #ff8dcb;
   --text-color: #353430;
   --page-color: #fff1f7;
-   --accent-color-oppacity: #32312D66;
+  --accent-color-oppacity: #32312d66;
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,9 +24,6 @@
     --text-color: #353430;
     --main-color: #ffc2e6;
     --page-color: #fff1f7;
-    --accent-color-oppacity: #32312D66;
+    --accent-color-oppacity: #32312d66;
   }
-
-  
 }
-

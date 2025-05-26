@@ -5,12 +5,12 @@
 */
 
 :root.theme-dark {
-  --bg-image : url(../images/cover-image-dark.png);
-  --accent-color : #FF0070;
-  --accent-color-oppacity: #FF007066;
-  --main-color: #DB00FF;
+  --bg-image: url(../images/cover-image-dark.png);
+  --accent-color: #ff0070;
+  --accent-color-oppacity: #ff007066;
+  --main-color: #db00ff;
   --header-text-color: #000028;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
   --page-color: #000028;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -20,12 +20,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-image : url(../images/cover-image-dark.png);
-    --accent-color : #FF0070;
-    --accent-color-oppacity: #FF007066;
-    --main-color: #DB00FF;
+    --bg-image: url(../images/cover-image-dark.png);
+    --accent-color: #ff0070;
+    --accent-color-oppacity: #ff007066;
+    --main-color: #db00ff;
     --header-text-color: #000028;
-    --text-color: #F1B2CE;
+    --text-color: #f1b2ce;
     --page-color: #000028;
   }
 }

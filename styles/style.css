@@ -3,9 +3,9 @@
 .page {
   padding: var(--container-padding-mb);
   color: var(--text-color);
-  background-color: var(--page-color);
   font-family: var(--main-font), monospace;
   font-size: var(--main-font-size);
+  background-color: var(--page-color);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--bg-image);
   background-repeat: no-repeat;
@@ -442,11 +442,11 @@ p {
   }
 
   .cards-distractions {
-     margin-block-start: 60px;
+    margin-block-start: 60px;
   }
 
-
-  .cards-priority, .cards-advice {
+  .cards-priority,
+  .cards-advice {
     gap: 10px;
   }
 
@@ -485,36 +485,32 @@ p {
 }
 
 .theme-dark .decorated-zone::after {
-    --accent-color: #FF0070;
-  }
+  --accent-color: #ff0070;
+}
 
 .theme-dark .decorated-zone::before {
-  --accent-color: #FF0070;
+  --accent-color: #ff0070;
 }
 
 .theme-dark .header__theme-menu-button {
-  --accent-color: #FF0070;
+  --accent-color: #ff0070;
 }
 
 .theme-dark .header__theme-menu-button_active {
-  --accent-color: #FF0070;
+  --accent-color: #ff0070;
 }
 
 .theme-dark .header__theme-menu-button:focus-visible {
-  --accent-color: #FF0070;
+  --accent-color: #ff0070;
 }
-
-/* .theme-dark .header__theme-menu-button:hover {
-  --accent-color-oppacity: (255, 0, 112, 0.4);
-} */
 
 .theme-dark .header__title,
 .theme-dark .footer__title {
-  --main-color: #DB00FF;
+  --main-color: #db00ff;
 }
 
 .theme-dark .lots__title {
-  --accent-color: #FF0070;
+  --accent-color: #ff0070;
 }
 
 .theme-dark .header__decoration {
@@ -545,10 +541,9 @@ p {
   display: none;
 }
 
-
 .theme-light .lots__title {
   --accent-color: #353430;
-} 
+}
 
 /* .theme-light .header__title,
 .theme-light .footer__title {
