@@ -12,6 +12,7 @@
   --main-color: #ffc2e6;
   --bg-image: url(../images/cover-image-light.png);
   --accent-color: #ff8dcb;
+  --accent-color-decoration: #353430;
   --text-color: #353430;
   --page-color: #fff1f7;
   --accent-color-oppacity: #32312d66;
@@ -21,9 +22,11 @@
   :root {
     --bg-image: url(../images/cover-image-light.png);
     --accent-color: #ff8dcb;
+    --accent-color-decoration: #353430;
     --text-color: #353430;
     --main-color: #ffc2e6;
     --page-color: #fff1f7;
     --accent-color-oppacity: #32312d66;
   }
+
 }

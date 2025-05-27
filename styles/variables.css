@@ -5,6 +5,7 @@
 :root {
   --bg-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
+  --accent-color-decoration: #ff0070;
   --main-color: #db00ff;
   --header-text-color: #000028;
   --text-color: #f1b2ce;
@@ -14,8 +15,8 @@
   --title-font-size-mb: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --title-font-size-pc: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --main-font-size: 18px;
-  --container-padding-mb: 10px;
-  --container-padding-pc: 20px;
+  --container-padding-mb: 10px 10px 0 10px;
+  --container-padding-pc: 20px 20px 0 20px;
   --accent-color-oppacity: rgba(255, 0, 112, 0.4);
   --page-color: #000028;
 }
